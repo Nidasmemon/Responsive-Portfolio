@@ -54,9 +54,10 @@ h3 {
 
 #masthead {
   position: fixed;
+  left: 0;
   z-index: 99;
   width: 100%;
-  margin: 0 0 30px;
+  margin: 0 0 30px 0;
   overflow: auto;
   color: #ffffff;
   background: #ffffff;
@@ -217,17 +218,54 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 980px) {
-
+  
   #masthead {
     width: 100%;
-    /* margin-right: 20px; */
     padding-right: 50px;
   }
 
   #main-container {
-    width: 70%;
+    width: 90%;
     margin-right: 50%;
   }
 
 
+@media screen and (max-width: 768px) {
+
+  #main-container {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  #masthead {
+    position: static;
+    width: 110%;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+
+  .container {
+    width: 110%;
+  }
+
+  #logo {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    text-align: center;
+    margin: 10px 5px 10px 5px;
+  }
+
+  .main-section {
+    margin-top: -150px;
+  }
+
+  .work {
+    width: 100%;
+  }
 }
